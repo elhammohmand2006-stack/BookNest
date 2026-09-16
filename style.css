@@ -151,5 +151,108 @@ body{
     background-color: #F5EBDD;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 20px #00000014;
+}
+/* Book Card Base Style */
+#featured {
+    padding: 60px 0 20px;
+}
+
+#featured h2 {
+    color: #5B0E18;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+/* خط تزئینی کوچک زیر عنوان */
+#featured h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #8A2F18;
+}
+
+#featured p {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.book-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+/* Hover Effect: card lifts up + shadow grows */
+.book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(91, 14, 24, 0.25);
+}
+
+/* Image zoom on hover */
+.book-card img {
+    height: 280px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.book-card:hover img {
+    transform: scale(1.08);
+}
+
+/* Card text styling */
+.book-card .card-title {
+    color: #5B0E18;
+    font-weight: bold;
+}
+
+.book-card .card-text {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Button styling matching theme */
+.book-card .btn-primary {
+    background-color: #8A2F18;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-card .btn-primary:hover {
+    background-color: #5B0E18;
+    transform: scale(1.05);
+}
+
+/* Fade-in animation when page loads */
+.book-card {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.book-card:nth-child(1) { animation-delay: 0.1s; }
+.book-card:nth-child(2) { animation-delay: 0.2s; }
+.book-card:nth-child(3) { animation-delay: 0.3s; }
+.book-card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
