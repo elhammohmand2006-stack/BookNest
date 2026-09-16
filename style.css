@@ -1,0 +1,61 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Navbar Style */
+.navbar{
+    padding: 15px 0;
+}
+.header{
+ transition: all 0.5s;
+}
+/* Logo name */
+.navbar-brand {
+    color: #E5C69C !important;
+    font-size: 28px;
+    font-weight: bold;
+}
+/* Menu links */
+.navbar-nav .nav-link {
+    color: #E5C69C !important;
+    font-size: 17px;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+/* Link color with hover */
+.navbar-nav .nav-link:hover {
+    color: #8A2F18 !important;
+}
+.navbar-toggler {
+    border-color: #E5C69C !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+/* Dropdown style */
+.dropdown-menu {
+    background-color: #8A2F18;
+    border: none;
+}
+.dropdown-item {
+    color: #E5C69C;
+}
+.dropdown-item:hover {
+    background-color: #5B0E18;
+    color: #E5C69C;
+}
+/* Search form */
+.navbar .form-control {
+    border-color: #8A2F18;
+}
+
+.navbar .btn-outline-success {
+    color: #E5C69C;
+    border-color: #E5C69C;
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: #8A2F18;
+    border-color: #8A2F18;
+    color: #E5C69C;
+}
