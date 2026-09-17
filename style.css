@@ -256,6 +256,39 @@ body{
         transform: translateY(0);
     }
 }
+/* Counts Section */
+.counts {
+    margin-bottom: 100px !important;
+}
+.counts .count-box {
+    background-color: #fff;
+    border-radius: 10px;
+    gap: 15px;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.counts .count-box:hover {
+    transform: translateY(-5px);
+}
+
+.counts .count-box i {
+    font-size: 40px;
+    color: #8A2F18;
+}
+
+.counts .count-box span {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #5B0E18;
+}
+
+.counts .count-box p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
 /* Contact Section */
 #contact h2 {
     color: #5B0E18;
